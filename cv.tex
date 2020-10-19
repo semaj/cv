@@ -1,0 +1,132 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+\usepackage{fontspec}
+\setmainfont{Source Sans Pro}
+\renewcommand{\sfdefault}{\rmdefault}
+
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{James}
+\familyname{Larisch}
+\address{}{Cambridge, MA}    % optional, remove the line if not wanted
+\email{james@jameslarisch.com}                      % optional, remove the line if not wanted
+\homepage{https://jameslarisch.com}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2020--Present}{PhD, Computer Science}{Harvard University}{Cambridge, MA}{}{}
+\cvline{}{\small Advisor: Eddie Kohler}
+\cventry{2017--2020}{MS, Computer Science}{Harvard University}{Cambridge, MA}{}{}
+\cvline{}{\small Advisor: James Mickens}
+\cventry{2012--2017}{BS in Computer Science}{Northeastern University}{Boston, MA}{}{}  % arguments 3 to 6 can be left empty
+\cvline{}{\small Magna Cum Laude}
+
+\section{Honors \& Awards}
+\cventry{2019}{NSF Graduate Research Fellowship}{National Science Foundation}{}{}{}
+\cventry{2017}{Chen Graduate Student Research Fellowship}{Harvard University}{}{}{}
+\cventry{2017}{IEEE Cybersecurity Award for Innovation (CRLite)}{IEEE SecDev / MITRE}{}{}{}
+\cventry{2017}{Undergraduate Research Award}{Northeastern University, CCIS}{}{}{}
+\cventry{2012}{Fellows Scholarship}{Northeastern University, CCIS}{}{}{}
+\cventry{2012}{Excellence Scholarship}{Northeastern University}{}{}{}
+
+\section{Publications}
+
+\cvline{2020}{Aqeel, Waqar, Zachary Hanif, James Larisch, Olamide Omolola,
+  Taejoong Chung, Dave Levin, Bruce Maggs, Alan Mislove, Bryan Parno, and
+  Christo Wilson. ``Assertion-Carrying Certificates.'' In 2020 Workshop on Foundations of Computer Security (FCS'20). 2020.}{}{}{}{}
+
+\cvline{2018}{Larisch, James, James Mickens, and Eddie Kohler. ``Alto:
+  Lightweight VMs Using Virtualization-aware Managed Runtimes.'' In Proceedings
+  of the 15th International Conference on Managed Languages \& Runtimes, pp. 1--7. 2018.}{}{}{}{}
+
+\cvline{2017}{Larisch, James, David Choffnes, Dave Levin, Bruce M. Maggs, Alan
+  Mislove, and Christo Wilson. ``CRLite: A Scalable System for Pushing All TLS
+  Revocations to All Browsers.'' In 2017 IEEE Symposium on Security and Privacy
+  (SP), pp. 539--556. IEEE, 2017.}{}{}{}{}
+
+\section{Teaching \& Mentoring}
+
+\cventry{Fall 2020}{Undergraduate Research Mentor}{Harvard Women in Computer Science}{Systems Group}{}{}
+\cventry{Fall 2018}{Teaching Fellow}{CS263: System Security}{James Mickens}{}{}
+
+\section{Work Experience}
+
+\cventry{2019--2020}{Senior Interview Engineer}{Karat.io}{Remote}{}{}
+
+\cventry{2017}{Technical Lead}{Soli}{Boston, MA}{}{}
+
+\cventry{2016}{Software Engineering Co-op}{Sonian}{Waltham, MA}{}{}
+\cvline{}{Back-end engineer on the email archiving team. Used Clojure and
+  ElasticSearch.}
+
+\cventry{2015}{Software Engineering Co-op}{Gem.co}{Los Angeles, CA}{}{}
+\cvline{}{Back-end engineer on the core Bitcoin API team. Used Ruby and
+  PostgreSQL.}
+
+\cventry{2014}{Software Engineering Co-op}{HubSpot}{Cambridge, MA}{}{}
+\cvline{}{Back-end engineer on the Analytics team. Used Java, Apache Hadoop,
+  HBase, and Kafka.}
+
+\cventry{2013}{Software Engineer}{Focused Coaching}{Morganville, NJ}{}{}
+\cvline{}{Sole developer of online score aggregation platform. Used
+  Ruby-on-Rails.}
+
+\section{Research Adoption \& Coverage}
+
+\cvline{2020}{Introducing CRLite: All of the Web PKI’s revocations,
+  compressed. \emph{Mozilla Security Blog}}
+
+\section{Community}
+
+\cventry{2018}{Technical Advisory Volunteer}{ACLU Massachusetts}{}{}{}{}
+\cvline{}{Demystified privacy and security concerns at community ``Crypto
+  Parties''.}
+
+\cventry{2018}{Technical Mentor}{YouthCITIES}{}{}{}{}
+\cvline{}{Mentored high school students building healthcare-focused startup
+  prototypes.}
+
+%\section{Technical Proficiency}
+%\subsection{Proficient With}
+%\cvline{languages}{Go, Ruby, Java, C, Javascript, HTML, CSS}
+%\subsection{Have Experience With}
+%\cvline{languages}{Rust, C++, Clojure, Racket, Haskell, OCaml, Python}
+%\cvline{technologies}{Apache Hadoop, Apache Kafka, Apache }
+
+
+\end{document}
