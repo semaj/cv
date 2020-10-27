@@ -18,6 +18,18 @@
 \moderncvstyle{classic}
 \moderncvcolor{purple}
 
+% Remove period after lines
+% See: https://tex.stackexchange.com/questions/400605/removing-periods-at-the-end-of-line-in-moderncv
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    \strut%                             %Fullstop removed
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
@@ -65,6 +77,13 @@
 \cventry{2012}{Excellence Scholarship}{Northeastern University}{}{}{}
 
 \section{Current Research}
+
+My research focuses on improving the flexibility and performance of modern
+Web infrastructure and applications while providing strong security and
+privacy guarantees. I'm interested in building novel systems that increase the
+privacy of Web infrastructure, offer users more control over their data, and
+foster trust in an increasingly untrustworthy internet.
+\\
 
 \cvline{Submitted}{Larisch, James, Alisha Ukani, Gabriele Oliaro, Savvy
   Raghuvanshi, Vincent Viego, Eddie Kohler, and James Mickens. ``\textbf{Juice:
@@ -121,10 +140,14 @@
 \cvline{}{Sole developer of online SAT score aggregation platform. Tech:
   Ruby-on-Rails.}
 
+\section{Technical Skills}
+\cvline{proficient}{Go, Ruby, Rust, C, Java, JavaScript, Lua}
+\cvline{experienced}{C++, SQL, Python, Clojure, Haskell, CSS, HTML, Racket, OCaml, Prolog}
+
 \section{Research Adoption \& Coverage}
 
 \cvline{2020}{Introducing CRLite: All of the Web PKI’s revocations,
-  compressed. \emph{Mozilla Security Blog.}}
+  compressed. \emph{Mozilla Security Blog}}
 
 \section{Community}
 
