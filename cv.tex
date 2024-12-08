@@ -6,17 +6,17 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[rpt,a4paper,sans]{moderncv}
 
 \usepackage{verbatim}
 \usepackage{fontspec}
-\setmainfont{Lato}
+\setmainfont{Noto Serif}
 \renewcommand{\sfdefault}{\rmdefault}
 
 
 % moderncv themes
 \moderncvstyle{classic}
-\moderncvcolor{purple}
+\moderncvcolor{black}
 
 % Remove period after lines
 % See: https://tex.stackexchange.com/questions/400605/removing-periods-at-the-end-of-line-in-moderncv
@@ -34,8 +34,8 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -61,56 +61,73 @@
 \maketitle
 
 \section{Education}
-\cventry{2017--2023}{PhD, Computer Science}{Harvard University}{Cambridge, MA}{}{}
+\cventry{2017--2024}{PhD, Computer Science}{Harvard University}{Cambridge, MA}{}{}
 \cvline{}{\small Advisor: Eddie Kohler}
+\cvline{}{\small Committee: Eddie Kohler, Minlan Yu, Stephen Chong, Christo
+Wilson}
 \cventry{2017--2020}{MS, Computer Science}{Harvard University}{Cambridge, MA}{}{}
 \cvline{}{\small Advisor: James Mickens}
 \cventry{2012--2017}{BS, Computer Science}{Northeastern University}{Boston, MA}{}{}  % arguments 3 to 6 can be left empty
 \cvline{}{\small Magna Cum Laude}
 \cvline{}{\small With Honors}
 
-\section{Current Research}
+\section{Honors \& Awards}
+\cventry{2022}{Honorable Mention - Best Paper - Hammurabi}{ACM CCS 2022}{}{}{}
+\cventry{2019}{NSF Graduate Research Fellowship}{National Science Foundation}{}{}{}
+\cventry{2017}{Chen Graduate Student Research Fellowship}{Harvard University}{}{}{}
+\cventry{2017}{IEEE Cybersecurity Award for Innovation - CRLite}{IEEE SecDev 2017 \& MITRE}{}{}{}
+\cventry{2017}{Undergraduate Research Award}{Northeastern University, CCIS}{}{}{}
+\cventry{2012}{Fellows Scholarship}{Northeastern University, CCIS}{}{}{}
+\cventry{2012}{Excellence Scholarship}{Northeastern University}{}{}{}
 
-\cvline{In Progress}{\textbf{James Larisch}, Eric Lu, Alisha Ukani,
-Gabriele Oliaro, Savvy Raghuvanshi,
-Jeremy Hsu,
-Stephen Herwig,
-  Eddie Kohler, and James Mickens. ``\textbf{Juice:
-  Stateful Serverless Functions without Manually Persisted State}.''}
-
-\cvline{In Progress}{\textbf{James Larisch},
-  Timothy Alberdingk Thijm,
-  Suleman Ahmad,
-  Peter Wu,
-  Tom Arnfeld,
-  and
-  Marwan Fayed. ``\textbf{[Not yet disclosed, DNS-related]}''}
+% \section{Current Research}
+%
+% \cvline{In Progress}{\textbf{James Larisch}, Eric Lu, Alisha Ukani,
+% Gabriele Oliaro, Savvy Raghuvanshi,
+% Jeremy Hsu,
+% Stephen Herwig,
+%   Eddie Kohler, and James Mickens. ``\textbf{Juice:
+%   Stateful Serverless Functions without Manually Persisted State}.''}
 
 \section{Refereed Publications}
 
-\cvline{2023}{\textbf{James Larisch}, Waqar Aqeel, Taejoong Chung,
+\cvline{SIGCOMM 2024}{\textbf{James Larisch}, Timothy Alberdingk-Thijm, Suleman Ahmad,
+  Peter Wu, Tom Arnfeld, and Marwan Fayed.
+  ``\textbf{Topaz: Declarative and Verifiable Authoritative DNS at CDN-Scale.}'' In ACM Special Interest Group on Data Communication (SIGCOMM). 2024.}{}{}{}{}
+
+\cvline{HotNets 2023}{\textbf{James Larisch}, Waqar Aqeel, Taejoong Chung,
   Eddie Kohler, Dave Levin, Bruce M. Maggs, Bryan Parno, and Christo Wilson.
   ``\textbf{No Root Store Left Behind}'' In ACM Workshop on Hot Topics in Networks (HotNets). 2023.}{}{}{}{}
 
-\cvline{2022}{\textbf{James Larisch}, Waqar Aqeel, Michael Lum,
+\cvline{CCS 2022}{\textbf{James Larisch}, Waqar Aqeel, Michael Lum,
   Yaelle Goldschlag, Kasra Torshizi, Leah Kannan, Yujie Wang, Taejoong Chung,
   Dave Levin, Bruce M. Maggs,
   Alan Mislove, Bryan Parno, and Christo Wilson. ``\textbf{Hammurabi: A Framework
   for Pluggable, Logic-Based X.509 Certificate Validation Policies.}'' In ACM
   SIGSAC Conference on Computer and Communications Security (CCS). 2022.}{}{}{}{}
 
-\cvline{2020}{Waqar Aqeel, Zachary Hanif, \textbf{James Larisch}, Olamide Omolola,
-  Taejoong Chung, Dave Levin, Bruce M. Maggs, Alan Mislove, Bryan Parno, and
-  Christo Wilson. ``\textbf{Assertion-Carrying Certificates.}'' In 2020 Workshop on Foundations of Computer Security (FCS'20). 2020.}{}{}{}{}
-
-\cvline{2018}{\textbf{James Larisch}, James Mickens, and Eddie Kohler. ``\textbf{Alto:
-  Lightweight VMs Using Virtualization-aware Managed Runtimes.}'' In Proceedings
-  of the 15th International Conference on Managed Languages \& Runtimes, pp. 1--7. 2018.}{}{}{}{}
-
-\cvline{2017}{\textbf{James Larisch}, David Choffnes, Dave Levin, Bruce M. Maggs, Alan
+\cvline{FCS 2020}{Waqar Aqeel, Zachary Hanif, \textbf{James Larisch}, Olamide Omolola,
   Mislove, and Christo Wilson. ``\textbf{CRLite: A Scalable System for Pushing All TLS
   Revocations to All Browsers.}'' In 2017 IEEE Symposium on Security and Privacy
   (SP), pp. 539--556. IEEE, 2017.}{}{}{}{}
+
+\cvline{ManLang 2018}{\textbf{James Larisch}, James Mickens, and Eddie Kohler. ``\textbf{Alto:
+  Lightweight VMs Using Virtualization-aware Managed Runtimes.}'' In Proceedings
+  of the 15th International Conference on Managed Languages \& Runtimes, pp. 1--7. 2018.}{}{}{}{}
+
+\cvline{Oakland 2017}{\textbf{James Larisch}, David Choffnes, Dave Levin, Bruce M. Maggs, Alan
+  Mislove, and Christo Wilson. ``\textbf{CRLite: A Scalable System for Pushing All TLS
+  Revocations to All Browsers.}'' In 2017 IEEE Symposium on Security and Privacy
+  (SP), pp. 539--556. IEEE, 2017.}{}{}{}{}
+
+\section{Research Adoption \& Coverage}
+
+\cvline{2024}{How we prevent conflicts in authoritative DNS configuration using
+formal verification. \emph{Cloudflare Blog.}}
+
+\cvline{2020}{Introducing CRLite: All of the Web PKI’s revocations,
+compressed. \emph{Mozilla Security Blog.}}
+
 
 \section{Teaching \& Mentoring}
 
@@ -122,54 +139,41 @@ Group}{Harvard}{}{}
 
 \section{Work Experience}
 
-\cventry{2024-}{Research Engineer}{Cloudflare}{Remote}{}{}
-\cvline{}{- Continued a new DNS subsystem (details to come).}
+\cventry{2024-Present}{Research Engineer}{Cloudflare}{Remote}{}{}
+\cvline{}{Designed and deployed new DNS edge microservice in Go that handles over 1M requests per second globally.}
+\cvline{}{Invented new Lisp-based programming language that reduces deployment time of DNS changes by over 100x.}
+\cvline{}{Formally verified all DNS changes using Racket, which prevents 1-3 network incidents a month.}
 
 \cventry{2021-2022}{Research Engineer Intern}{Cloudflare}{Remote}{}{}
-\cvline{}{- Developed a new DNS subsystem (details to come).}
+% \cvline{}{- Developed a new DNS subsystem (details to come).}
 
 \cventry{2016}{Software Engineer Co-op}{Sonian}{Waltham, MA}{}{}
-%\cvline{}{Back-end engineer on the email archiving team. Tech: Clojure,
-%ElasticSearch.}
-\cvline{}{- Designed and implemented the team's first tracing infrastructure to track and debug requests across microservices.}
+\cvline{}{Reduced incident debugging time from hours to minutes by
+creating the company's first request-tracing system.}
 
 \cventry{2015}{Software Engineer Co-op}{Gem.co}{Los Angeles, CA}{}{}
 %\cvline{}{Back-end engineer. Tech: Ruby, PostgreSQL, Bitcoin.}
-\cvline{}{- Implemented Gem's webhook/callback system in which blockchain events trigger customer HTTP endpoints.}
-\cvline{}{- Forked the Toshi Bitcoin node client to provide blockchain information to the API back-end faster than third-party APIs.}
-\cvline{}{- Added Litecoin and Dogecoin auto-conversion support to multi-signature wallet API.}
+\cvline{}{Deployed webhook API product, which sent HTTP requests
+to customer endpoints upon Bitcoin blockchain events.}
+\cvline{}{
+  Reduced blockchain data retrieval times by 2x by forking and running
+  a modified Bitcoin node instance in Ruby.}
 
 \cventry{2014}{Software Engineer Co-op}{HubSpot}{Cambridge, MA}{}{}
-%\cvline{}{Back-end engineer on the Analytics team. Tech: Java, Apache Hadoop,
-  %HBase, and Kafka.}
-\cvline{}{- Converted bloated Hadoop event processing pipeline (60--90m) into Kafka pipline (5--15s).}
-\cvline{}{- Designed and deployed traffic simulation and verification tool which prevented major calculation bugs before production deployment.}
-\cvline{}{- Maintained the analytics system which processes and aggregates hundreds of customer site events per second.}
+\cvline{}{Reduced analytics event processing time from 60-90m to 5-15s
+by converting bloated Hadoop pipeline to Kafka.}
+\cvline{}{Designed traffic simulation tool using Java
+that prevented a major analytics incident months before it
+happened.}
 
 \cventry{2013}{Software Engineer}{Focused Coaching}{Morganville, NJ}{}{}
 \cvline{}{- Sole developer of online SAT score aggregation platform written using Ruby-on-Rails.}
 
-\section{Honors \& Awards}
-\cventry{2022}{Honorable Mention - Best Paper - Hammurabi}{ACM CCS 2022}{}{}{}
-\cventry{2019}{NSF Graduate Research Fellowship}{National Science Foundation}{}{}{}
-\cventry{2017}{Chen Graduate Student Research Fellowship}{Harvard University}{}{}{}
-\cventry{2017}{IEEE Cybersecurity Award for Innovation - CRLite}{IEEE SecDev 2017 \& MITRE}{}{}{}
-\cventry{2017}{Undergraduate Research Award}{Northeastern University, CCIS}{}{}{}
-\cventry{2012}{Fellows Scholarship}{Northeastern University, CCIS}{}{}{}
-\cventry{2012}{Excellence Scholarship}{Northeastern University}{}{}{}
-
-
-\section{Technical Skills}
-\cvline{actively proficient}{Go, Ruby}
-\cvline{professionally experienced}{Java, Clojure, SQL, JavaScript}
-\cvline{academically experienced}{C, Rust, Lua, C++, OCaml, Haskell, Prolog, Python,
-Racket, TypeScript}
-
-\section{Research Adoption \& Coverage}
-
-\cvline{2020}{Introducing CRLite: All of the Web PKI’s revocations,
-  compressed. \emph{Mozilla Security Blog}}
-
+% \section{Technical Skills}
+% \cvline{proficient}{Go, Ruby, Rust, Java}
+% \cvline{experienced}{C, Lua, C++, OCaml, Haskell, Prolog,
+% JavaScript, SQL, Python, Racket, TypeScript}
+%
 \section{Community}
 
 \cventry{2018}{Technical Advisory Volunteer}{ACLU Massachusetts}{}{}{}{}
@@ -180,17 +184,17 @@ Racket, TypeScript}
 \cvline{}{Mentored high school students building healthcare-focused startup
   prototypes.}
 
-\section{Part-Time Work Experience}
-
-\cventry{2019--2020}{Senior Interview Engineer}{Karat.io}{Remote}{}{}
-\cvline{}{- Conducted over 30 hour-long technical interviews with software
-  engineering candidates.}
-\cvline{}{- Completed comprehensive evaluation write-ups for each candidate.}
-
-\cventry{2017}{Technical Lead}{Soli}{Boston, MA}{}{}
-\cvline{}{- Designed and implemented NodeJS back-end for mobile-only,
-early-stage startup.}
-\cvline{}{- Interviewed and hired the company's CTO.}
+% \section{Part-Time Work Experience}
+%
+% \cventry{2019--2020}{Senior Interview Engineer}{Karat.io}{Remote}{}{}
+% \cvline{}{- Conducted over 30 hour-long technical interviews with software
+%   engineering candidates.}
+% \cvline{}{- Completed comprehensive evaluation write-ups for each candidate.}
+%
+% \cventry{2017}{Technical Lead}{Soli}{Boston, MA}{}{}
+% \cvline{}{- Designed and implemented NodeJS back-end for mobile-only,
+% early-stage startup.}
+% \cvline{}{- Interviewed and hired the company's CTO.}
 
 %\section{Technical Proficiency}
 %\subsection{Proficient With}
